@@ -1,0 +1,47 @@
+login and register باقي شوية ستايل في صفحة 
+
+
+
+
+function Login() {
+    return <>
+    <div className="register  mx-auto">
+        <h2>Amazon<span className="fs-6">.in</span></h2>
+        <img src="../../images/Vector.svg" className="w-100" alt="" />
+        <div className="card mx-auto mb-3">
+            <h3 className="text-start mb-4">Sign in</h3>
+            <form className="text-start">
+                <label htmlFor="email" className="form-label ">Email Or Mobile Phone</label>
+                <input className="form-control mb-2" id="email" type="text" />
+                <button className="btn btn-warning w-100 mt-3 mb-3">Continue</button>
+            </form>
+            
+            <div className="text-start">
+            <h6>By continuing, you agree to Amazon’s <a href="">condition of use</a></h6>
+            <h6 className="mb-3">and <a href="">privacy Notice</a></h6>
+            <a href="" className="text-decoration-none">Need Help?</a>
+            <hr />
+            <h4>Buying Of work ? </h4>
+            <a href="" className="text-decoration-none">Shop on Amazon Business</a>
+            </div>
+        </div>
+        <div className="">
+        <h6 className="">New to Amazon?</h6>
+        <button className="btn btn-transparent  border">Create Your Amazon Account</button>
+        </div>
+        
+        <hr className="w-100"/>
+        <div className="links mb-3">
+            <a className="me-3 text-decoration-none" href="">conditions of use </a>
+            <a className="me-3 text-decoration-none" href="">privacy Notice </a>
+            <a className=" text-decoration-none" href="">Help </a>
+        </div>
+        <p>© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+    </div>
+    
+    
+    
+    </>;
+}
+
+export default Login;

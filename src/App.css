@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  width: 100vw !important;
+}
+
+/*--------- Navbar ---------- */
+#subnav {
+  padding: 3px 12px;
+  background: #232f3e;
+}
+
+.navbar-brand {
+  font-family: Lato, sans-serif;
+  font-weight: 800;
+  font-size: 16.34px;
+  line-height: 19.61px;
+  letter-spacing: 0%;
+}
+
+.nav-item {
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-size: 16.41px;
+  line-height: 19.7px;
+  letter-spacing: 0%;
+}
+
+/* Footer Top Button */
+.BTNfooter {
+  background: #37475a;
+  width: 100%;
+  text-align: center;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.btnFooter {
+  color: aliceblue;
+  background: #37475a;
+  border: none;
+  padding: 15px 50px;
+  font-family: "Noto Serif Gujarati", serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .btnFooter {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btnFooter {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+}
+
+/* Main Footer */
+footer {
+  width: 100%;
+  min-height: 548px;
+  background: #232f3e;
+}
+
+footer li {
+  list-style: none;
+}
+
+.footer-section {
+  margin-top: 50px;
+}
+
+.container {
+  border-bottom: 1px solid #4c4c4c;
+}
+
+/* Deep Footer */
+.deepFooter {
+  background: #131a22;
+  width: 100%;
+  min-height: 266px;
+}
+
+.deepFooter h3,
+.deepFooter p {
+  font-family: "Noto Serif Gujarati", serif;
+  font-size: 14.67px;
+  color: #fff;
+}
+
+.deepFooter p {
+  font-weight: 300;
+  color: #999999;
+}
+
+/* Footer Bottom */
+.feramFooter {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+
+/* Container Styles */
+.clothing-slider-container {
+  width: 100%;
+  max-width: 1440px;
+  max-height: 320px;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  gap: 10px;
+  padding-top: 25px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+}
+
+/* Slider Title */
+.slider-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.slider-title a {
+  font-family: Noto Serif Gujarati;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23.15px;
+  letter-spacing: 0%;
+  color: #1f8394;
+  text-decoration: none;
+}
+
+/* Slider Wrapper */
+.clothing-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+/* Scrollable Slider */
+.clothing-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #8d8d8d transparent;
+  scroll-behavior: smooth;
+  border-radius: 23px;
+  padding-bottom: 10px;
+}
+
+/* Custom Scrollbar */
+.clothing-slider::-webkit-scrollbar {
+  height: 5px;
+}
+
+.clothing-slider::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.clothing-slider::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+/* Individual Item */
+.slider-item {
+  flex: 0 0 auto;
+  width: 150px;
+  text-align: center;
+}
+
+.slider-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider-img:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation Buttons */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: 3px solid #ccc;
+  width: 40px;
+  height: 100px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10; /* Ensures buttons appear on top */
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show Buttons on Hover */
+.clothing-slider-wrapper:hover .slider-btn {
+  opacity: 1;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.slider-btn:hover {
+  background: #f0f0f0;
+}
+
+/* Home */
+.Home {
+  background: #575757 !important;
+  margin-bottom: -80px;
+}
+.cards {
+
+}
+
+.card-1 {
+  width: 319px;
+  min-height: 472px;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 99;
+ 
+  img {
+    width: 135px;
+    height: 157px;
+    gap: 5px;
+  }
+  a{
+    text-decoration: none;
+    
+  }
+}
+
+.hover-underline:hover {
+  text-decoration: underline !important;
+color: rgb(0, 0, 121);}
+
+
+.custom-card {
+  z-index: 999;
+  position: relative;
+  padding: 10px;
+  min-height: 472px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1460px;
+  width: 100%;
+  margin: auto;
+}
+
+.custom-card h5 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.custom-card img {
+  width: 100%;
+  height: 116px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.custom-card .row {
+  flex-grow: 1;
+}
+
+.custom-card a {
+  font-family: "Noto Serif Gujarati", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23.15px;
+  letter-spacing: 0%;
+  color: #1f8394 !important;
+  text-decoration: none;
+  margin-top: auto;
+  display: block;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .custom-card {
+    min-height: auto;
+    padding: 10px;
+  }
+  
+  .custom-card img {
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+    min-height: auto;
+  }
+  
+  .custom-card img {
+    height: 75px;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-card {
+    padding: 10px;
+  }
+  
+  .custom-card img {
+    height: 70px;
+  }
+
+  .custom-card h5 {
+    font-size: 1rem;
+  }
+
+  .custom-card a {
+    font-size: 14px;
+  }
+}
+
+.HomeContent{
+  top: -120px;
+  z-index: 999;
+  position: relative;
+}
+
+/* SideBar */
+.SideBar{
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 999;
+  h3{
+    font-family: Inter;
+  font-weight: 600;
+  font-size: 14.23px;
+  line-height: 17.22px;
+  letter-spacing: 0%;
+  }
+  label{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12.45px;
+    line-height: 15.06px;
+    letter-spacing: 0%;
+    text-align: center;
+    
+  }
+}
+.feramFooter{
+background: transparent!important;
+max-height: 300px !important;
+
+}
